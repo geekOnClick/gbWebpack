@@ -1,0 +1,17 @@
+.buttons{
+    display: flex;
+}
+#hiddenElem{
+    display: none;
+}
+#calcDate{
+    display: block;
+}
+.timerButton{
+    cursor: pointer;
+    display: block;
+    margin-right: 10px;
+}
+.calcButton{
+    display: none;
+}
