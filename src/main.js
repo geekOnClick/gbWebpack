@@ -1,6 +1,0 @@
-import "./js/pages/dateCalc.js"
-import "./js/custom-plugins/timer/timerView.js"
-import "./js/custom-plugins/calc/calcView.js"
-import "./js/pages/timerMain.js"
-import "./css/style.css"
-// import "../../sound/Gong.mp3"

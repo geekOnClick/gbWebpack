@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор дат</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="module" src="./js/main.js"></script>
+    
+    
+    <!-- <script type="module" src="./js/timer.js"></script> -->
+</head>
+<body>
+<div class="content">
+    <div class="container">
+        <div class="info">
+            <div class="header">
+                <div class="header-tab">Калькулятор</div>
+                <div class="header-tab">Таймер</div>
+               
+            </div>
+            <div class="tabcontent">
+                <div class="description">
+                <form id="calcDate">
+                    <h3>Калькулятор дат</h3>
+                    <label>
+                        <strong>Первая дата:</strong>
+                        <input type="date" name="firstDate">
+                    </label>
+                    <label>
+                        <strong>Вторая дата:</strong>
+                        <input type="date" name="secondDate">
+                    </label>
+                    <button type="submit">Посчитать промежуток</button>
+                    <!-- <p id="result"></p> -->
+                </form>
+                </div>
+            </div>
+            <div class="tabcontent">
+                <div class="description">
+                    <form id="timerDate">
+                        <h3>Таймер</h3>
+                        
+                        <label>
+                            <strong>Засеки секунды:</strong>
+                            <input name="timeDate">
+                        </label>
+                        <button id="btnStart" type="submit">Старт таймера</button>
+                         
+                        
+                        
+                    </form>
+                   <button id="stopTimer" type="submit">Стоп таймера</button>
+                     
+                </div>
+            </div>
+            <div id="timerShow"></div>
+            <p style="color: rgb(228, 228, 228);" id="result">Вывод</p>
+        </div>
+        
+    </div>
+
+
+    
+</body>
+</html>
