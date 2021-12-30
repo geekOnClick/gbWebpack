@@ -1,0 +1,115 @@
+.gallery {
+   &__inner {
+      margin-top: 128px;
+      @include media("max", "xs") {
+         margin-top: 64px;
+      }
+   }
+
+   &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include media("max", "sm") {
+         justify-content: space-between;
+      }
+      @include media("max", "tablet") {
+         justify-content: center;
+      }
+      @include media("max", "xs") {
+         justify-content: center;
+      }
+   }
+
+   &__item {
+      width: 250px;
+      margin-bottom: 50px;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      cursor: pointer;
+      @include media("max", "sm") {
+         margin-right: 0;
+         margin-bottom: 16px;
+         &--hidden {
+            display: none;
+         }
+      }
+      &:hover .gallery__overlay {
+         opacity: 1;
+         animation: bounce-in-top 0.8s;
+         visibility: visible;
+      }
+   }
+   &__audio {
+      width: 250px;
+      height: 250px;
+      background-image: url(../img/liquid-2.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+   }
+   &__video {
+      display: flex;
+      width: 250px;
+      height: 250px;
+   }
+
+   &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 420px;
+      background: $dark-overlay;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.5s;
+      animation: slide-out-top 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      visibility: hidden;
+   }
+
+   &__img {
+      height: 250px;
+      width: 250px;
+      transition: all 0.8s ease;
+   }
+   &__img-card {
+      @include media("max", "sm") {
+         max-width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__content-title {
+      background: $bgcd;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+   }
+
+   &__title {
+      margin-bottom: 12px;
+      font-weight: 600;
+      line-height: 1.2;
+      font-size: 20px;
+      color: $f-text;
+      text-align: center;
+   }
+   &__item:nth-child(3n) {
+      margin-right: 0;
+      @include media("max", "lp") {
+         margin-right: 30px;
+      }
+      @include media("max", "sm") {
+         margin-right: 0px;
+      }
+   }
+
+   &__catalog-inner {
+      margin-top: 50px;
+   }
+}
